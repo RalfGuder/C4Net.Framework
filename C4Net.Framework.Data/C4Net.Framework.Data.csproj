@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8CC040F2-732E-4FDC-A85B-897546FD59B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>C4Net.Framework.Data</RootNamespace>
+    <AssemblyName>C4Net.Framework.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapters\DataAdapterBase.cs" />
+    <Compile Include="Adapters\DataObjectAdapter.cs" />
+    <Compile Include="Attributes\DataDecimalsAttribute.cs" />
+    <Compile Include="Attributes\DataLengthAttribute.cs" />
+    <Compile Include="Attributes\MaxValueAttribute.cs" />
+    <Compile Include="Attributes\MinValueAttribute.cs" />
+    <Compile Include="Base\BaseCommand.cs" />
+    <Compile Include="Base\BaseDAL.cs" />
+    <Compile Include="Base\BaseParameter.cs" />
+    <Compile Include="Base\BaseParameterCollection.cs" />
+    <Compile Include="Base\CommandConverter.cs" />
+    <Compile Include="Builders\CommandBuilder.cs" />
+    <Compile Include="Builders\ConditionCommandBuilder.cs" />
+    <Compile Include="Builders\ExpressionCommandBuilder.cs" />
+    <Compile Include="DAO\IDAO.cs" />
+    <Compile Include="DAO\ILogDAO.cs" />
+    <Compile Include="DataContext.cs" />
+    <Compile Include="Definitions\AttributeDefinition.cs" />
+    <Compile Include="Definitions\DefinitionManager.cs" />
+    <Compile Include="Definitions\EntityDefinition.cs" />
+    <Compile Include="Definitions\EntityDependencyEnum.cs" />
+    <Compile Include="Expressions\ExprCandidates.cs" />
+    <Compile Include="Expressions\ExprEvaluator.cs" />
+    <Compile Include="Expressions\ExprReviewer.cs" />
+    <Compile Include="Expressions\IQueryableObject.cs" />
+    <Compile Include="Expressions\QueryableObject.cs" />
+    <Compile Include="IDataContext.cs" />
+    <Compile Include="IRepository.cs" />
+    <Compile Include="IUnitOfWork.cs" />
+    <Compile Include="Repository.cs" />
+    <Compile Include="Transactions\ITransactionFactory.cs" />
+    <Compile Include="Transactions\ITransactionManager.cs" />
+    <Compile Include="Configuration\DbConnectionInfo.cs" />
+    <Compile Include="Configuration\DbConnectionManager.cs" />
+    <Compile Include="Configuration\DbProviderInfo.cs" />
+    <Compile Include="Configuration\DbProviderManager.cs" />
+    <Compile Include="Configuration\IDbConnectionManager.cs" />
+    <Compile Include="Configuration\IDbProviderManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transactions\Transactionable.cs" />
+    <Compile Include="Transactions\TransactionFactory.cs" />
+    <Compile Include="Transactions\TransactionManager.cs" />
+    <Compile Include="UnitOfWork.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\C4Net.Framework.Core\C4Net.Framework.Core.csproj">
+      <Project>{4b98f866-f6a4-4c7a-a163-8b94ed2b5973}</Project>
+      <Name>C4Net.Framework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\C4Net.Framework.Expressions\C4Net.Framework.Expressions.csproj">
+      <Project>{8b510605-efa6-4ae7-bb8c-e57b5a494671}</Project>
+      <Name>C4Net.Framework.Expressions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

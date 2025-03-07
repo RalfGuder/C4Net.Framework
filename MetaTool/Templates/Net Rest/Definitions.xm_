@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions>
+<Entities>
+  [%foreach(Entities)%]<Entity EntId="[%EntId%]" Name="[%LogicalName%]" TableName="[%PhysicalName%]" Dependency="1" Depth="[%Depth%]" IsLoggable="false" Module="META">
+    <Attributes>
+	  [%foreach(Attributes)%]<Attribute AttrIx="[%AttrIx%]" Name="[%LogicalName%]" ColumnName="[%PhysicalName%]" SequenceNumber="[%SequenceNumber%]" IsPrimaryKey="[%IsPrimaryKey%]"
+                 IsMandatory="[%IsMandatory%]" IsForeignKey="[%IsForeignKey%]" NetDataType="[%NetType%]" DataLength="[%DataLength%]" DataDecimals="[%DataDecimals%]"/>
+    [%end%]</Attributes>
+  </Entity>
+[%end%]</Entities>
+</Definitions>

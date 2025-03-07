@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<parameters>
+	<parameter name="Author" value="jfseijas" />
+	<parameter name="AuthorName" value="Jesús Seijas" />
+  <parameter name="ProductName" value="C4Net" />
+  <parameter name="ProjectNameService" value="C4Net.Rest" />
+  <parameter name="NamespaceModel" value="C4Net.Model" />
+  <parameter name="NamespaceBusiness" value="C4Net.Business" />
+  <parameter name="NamespaceService" value="C4Net.Service" />
+  <parameter name="DatabaseName" value="Test" />
+	<parameter name="DatabaseSchemaName" value="JC3IEDM" />
+  <parameter name="NamespaceContractApi" value="C4Net/api/v1" />
+</parameters>

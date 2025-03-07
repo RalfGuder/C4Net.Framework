@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Definitions>
+  <Entities>
+    <Entity EntId="10010009" Name="DOMAIN" TableName="DOM" Dependency="1" Depth="0" IsLoggable="false" Module="META">
+      <Attributes>
+        <Attribute AttrIx="100001" Name="domain-id" ColumnName="dom_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="int" DataLength="9" DataDecimals="0"/>
+        <Attribute AttrIx="100002" Name="domain-name-text" ColumnName="name_txt" SequenceNumber="2" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="string" DataLength="160" DataDecimals="0"/>
+        <Attribute AttrIx="100003" Name="domain-definition-text" ColumnName="def_txt" SequenceNumber="3" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="string" DataLength="999" DataDecimals="0"/>
+        <Attribute AttrIx="100004" Name="domain-class-name-text" ColumnName="class_name_txt" SequenceNumber="4" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="string" DataLength="16" DataDecimals="0"/>
+        <Attribute AttrIx="100005" Name="domain-restriction-type-code" ColumnName="restr_type_code" SequenceNumber="5" IsPrimaryKey="False"
+                     IsMandatory="False" IsForeignKey="False" NetDataType="DomainRestrictionTypeEnum?" DataLength="2" DataDecimals="0"/>
+        <Attribute AttrIx="100010" Name="domain-measurement-unit-description-text" ColumnName="meas_unit_descr_txt" SequenceNumber="6" IsPrimaryKey="False"
+                     IsMandatory="False" IsForeignKey="False" NetDataType="string" DataLength="32" DataDecimals="0"/>
+        <Attribute AttrIx="100011" Name="parent-domain-id" ColumnName="pa_dom_id" SequenceNumber="7" IsPrimaryKey="False"
+                     IsMandatory="False" IsForeignKey="True" NetDataType="int?" DataLength="9" DataDecimals="0"/>
+        <Attribute AttrIx="100012" Name="domain-standardisation-level-code" ColumnName="stdn_lvl_code" SequenceNumber="8" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="StandardisationLevelEnum" DataLength="6" DataDecimals="0"/>
+        <Attribute AttrIx="100013" Name="domain-model-level-code" ColumnName="mod_lvl_code" SequenceNumber="9" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="ModelLevelEnum" DataLength="4" DataDecimals="0"/>
+        <Attribute AttrIx="100014" Name="domain-definition-source-text" ColumnName="def_src_txt" SequenceNumber="10" IsPrimaryKey="False"
+                     IsMandatory="False" IsForeignKey="False" NetDataType="string" DataLength="100" DataDecimals="0"/>
+      </Attributes>
+    </Entity>
+    <Entity EntId="10010012" Name="ENTITY" TableName="ENT" Dependency="1" Depth="0" IsLoggable="false" Module="META">
+      <Attributes>
+        <Attribute AttrIx="100001" Name="entity-id" ColumnName="ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100002" Name="entity-name-text" ColumnName="name_txt" SequenceNumber="2" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="string" DataLength="80" DataDecimals="0"/>
+        <Attribute AttrIx="100003" Name="entity-table-name-text" ColumnName="tab_name_txt" SequenceNumber="3" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="string" DataLength="30" DataDecimals="0"/>
+        <Attribute AttrIx="100004" Name="entity-definition-text" ColumnName="def_txt" SequenceNumber="4" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="string" DataLength="999" DataDecimals="0"/>
+        <Attribute AttrIx="100005" Name="entity-dependency-code" ColumnName="depen_code" SequenceNumber="5" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="EntityDependencyEnum" DataLength="2" DataDecimals="0"/>
+        <Attribute AttrIx="100006" Name="entity-depth-count" ColumnName="depth_cnt" SequenceNumber="6" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="short" DataLength="3" DataDecimals="0"/>
+        <Attribute AttrIx="100007" Name="entity-storage-type-code" ColumnName="stg_type_code" SequenceNumber="7" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="EntityStorageTypeEnum" DataLength="4" DataDecimals="0"/>
+        <Attribute AttrIx="100008" Name="entity-standardisation-level-code" ColumnName="stdn_lvl_code" SequenceNumber="8" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="StandardisationLevelEnum" DataLength="6" DataDecimals="0"/>
+        <Attribute AttrIx="100009" Name="entity-model-level-code" ColumnName="mod_lvl_code" SequenceNumber="9" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="ModelLevelEnum" DataLength="4" DataDecimals="0"/>
+      </Attributes>
+    </Entity>
+    <Entity EntId="10010058" Name="BUSINESS-RULE" TableName="BR" Dependency="1" Depth="0" IsLoggable="false" Module="META">
+      <Attributes>
+        <Attribute AttrIx="100001" Name="business-rule-id" ColumnName="br_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="long" DataLength="12" DataDecimals="0"/>
+        <Attribute AttrIx="100002" Name="business-rule-category-code" ColumnName="cat_code" SequenceNumber="2" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="BusinessRuleCategoryEnum" DataLength="6" DataDecimals="0"/>
+        <Attribute AttrIx="100003" Name="business-rule-section-cross-reference-text" ColumnName="section_xref_txt" SequenceNumber="3" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="string" DataLength="15" DataDecimals="0"/>
+        <Attribute AttrIx="100004" Name="business-rule-name-text" ColumnName="name_txt" SequenceNumber="4" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="string" DataLength="999" DataDecimals="0"/>
+        <Attribute AttrIx="100005" Name="business-rule-definition-text" ColumnName="def_txt" SequenceNumber="5" IsPrimaryKey="False"
+                     IsMandatory="False" IsForeignKey="False" NetDataType="string" DataLength="999" DataDecimals="0"/>
+        <Attribute AttrIx="100006" Name="business-rule-table-cross-reference-text" ColumnName="tab_xref_txt" SequenceNumber="6" IsPrimaryKey="False"
+                     IsMandatory="False" IsForeignKey="False" NetDataType="string" DataLength="15" DataDecimals="0"/>
+      </Attributes>
+    </Entity>
+    <Entity EntId="10010001" Name="ALTERNATE-KEY" TableName="ALT_KEY" Dependency="1" Depth="1" IsLoggable="false" Module="META">
+      <Attributes>
+        <Attribute AttrIx="100001" Name="entity-id" ColumnName="ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100002" Name="alternate-key-index" ColumnName="ak_ix" SequenceNumber="2" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="short" DataLength="2" DataDecimals="0"/>
+        <Attribute AttrIx="100003" Name="alternate-key-number-quantity" ColumnName="ak_no_qty" SequenceNumber="3" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="short" DataLength="3" DataDecimals="0"/>
+        <Attribute AttrIx="100004" Name="alternate-key-uniqueness-indicator-code" ColumnName="uniq_ind_code" SequenceNumber="4" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="AlternateKeyUniquenessIndicatorEnum" DataLength="2" DataDecimals="0"/>
+      </Attributes>
+    </Entity>
+    <Entity EntId="10010004" Name="ATTRIBUTE" TableName="ATTR" Dependency="1" Depth="1" IsLoggable="false" Module="META">
+      <Attributes>
+        <Attribute AttrIx="100001" Name="entity-id" ColumnName="ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100002" Name="attribute-index" ColumnName="attr_ix" SequenceNumber="2" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="int" DataLength="6" DataDecimals="0"/>
+        <Attribute AttrIx="100003" Name="attribute-name-text" ColumnName="name_txt" SequenceNumber="3" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="string" DataLength="160" DataDecimals="0"/>
+        <Attribute AttrIx="100004" Name="attribute-column-name-text" ColumnName="col_name_txt" SequenceNumber="4" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="string" DataLength="30" DataDecimals="0"/>
+        <Attribute AttrIx="100005" Name="attribute-sequence-number-ordinal" ColumnName="attr_seqnr_ord" SequenceNumber="5" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="short" DataLength="3" DataDecimals="0"/>
+        <Attribute AttrIx="100006" Name="attribute-primary-key-indicator-code" ColumnName="pk_ind_code" SequenceNumber="6" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="AttributePrimaryKeyIndicatorEnum" DataLength="2" DataDecimals="0"/>
+        <Attribute AttrIx="100007" Name="attribute-foreign-key-indicator-code" ColumnName="fk_ind_code" SequenceNumber="7" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="AttributeForeignKeyIndicatorEnum" DataLength="2" DataDecimals="0"/>
+        <Attribute AttrIx="100008" Name="attribute-standardisation-level-code" ColumnName="stdn_lvl_code" SequenceNumber="8" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="StandardisationLevelEnum" DataLength="6" DataDecimals="0"/>
+      </Attributes>
+    </Entity>
+    <Entity EntId="10010011" Name="DOMAIN-VALUE" TableName="DOM_VAL" Dependency="1" Depth="1" IsLoggable="false" Module="META">
+      <Attributes>
+        <Attribute AttrIx="100001" Name="domain-id" ColumnName="dom_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="9" DataDecimals="0"/>
+        <Attribute AttrIx="100002" Name="domain-value-index" ColumnName="dom_val_ix" SequenceNumber="2" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="long" DataLength="12" DataDecimals="0"/>
+        <Attribute AttrIx="100003" Name="domain-value-description-text" ColumnName="descr_txt" SequenceNumber="3" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="string" DataLength="32" DataDecimals="0"/>
+        <Attribute AttrIx="100004" Name="domain-value-name-text" ColumnName="name_txt" SequenceNumber="4" IsPrimaryKey="False"
+                     IsMandatory="False" IsForeignKey="False" NetDataType="string" DataLength="80" DataDecimals="0"/>
+        <Attribute AttrIx="100005" Name="domain-value-definition-text" ColumnName="def_txt" SequenceNumber="5" IsPrimaryKey="False"
+                     IsMandatory="False" IsForeignKey="False" NetDataType="string" DataLength="999" DataDecimals="0"/>
+        <Attribute AttrIx="100006" Name="domain-value-type-code" ColumnName="type_code" SequenceNumber="6" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="DomainValueTypeEnum" DataLength="6" DataDecimals="0"/>
+        <Attribute AttrIx="100007" Name="domain-value-standardisation-level-code" ColumnName="stdn_lvl_code" SequenceNumber="7" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="StandardisationLevelEnum" DataLength="6" DataDecimals="0"/>
+        <Attribute AttrIx="100008" Name="domain-value-source-text" ColumnName="src_txt" SequenceNumber="8" IsPrimaryKey="False"
+                     IsMandatory="False" IsForeignKey="False" NetDataType="string" DataLength="100" DataDecimals="0"/>
+      </Attributes>
+    </Entity>
+    <Entity EntId="10010036" Name="RELATIONSHIP" TableName="REL" Dependency="1" Depth="1" IsLoggable="false" Module="META">
+      <Attributes>
+        <Attribute AttrIx="100001" Name="parent-entity-id" ColumnName="pa_ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100002" Name="child-entity-id" ColumnName="ch_ent_id" SequenceNumber="2" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100003" Name="relationship-index" ColumnName="rel_ix" SequenceNumber="3" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="short" DataLength="2" DataDecimals="0"/>
+        <Attribute AttrIx="100004" Name="relationship-type-code" ColumnName="type_code" SequenceNumber="4" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="RelationshipTypeEnum" DataLength="2" DataDecimals="0"/>
+      </Attributes>
+    </Entity>
+    <Entity EntId="10010059" Name="BUSINESS-RULE-ENTITY" TableName="BR_ENT" Dependency="1" Depth="1" IsLoggable="false" Module="META">
+      <Attributes>
+        <Attribute AttrIx="100001" Name="business-rule-id" ColumnName="br_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="long" DataLength="12" DataDecimals="0"/>
+        <Attribute AttrIx="100002" Name="business-rule-entity-index" ColumnName="br_ent_ix" SequenceNumber="2" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="long" DataLength="12" DataDecimals="0"/>
+        <Attribute AttrIx="100003" Name="entity-of-interest-id" ColumnName="ent_of_interest_id" SequenceNumber="3" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+      </Attributes>
+    </Entity>
+    <Entity EntId="10010002" Name="ALTERNATE-KEY-ATTRIBUTE" TableName="AK_ATTR" Dependency="1" Depth="2" IsLoggable="false" Module="META">
+      <Attributes>
+        <Attribute AttrIx="100001" Name="entity-id" ColumnName="ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100100" Name="entity-id" ColumnName="ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100002" Name="attribute-index" ColumnName="attr_ix" SequenceNumber="2" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="6" DataDecimals="0"/>
+        <Attribute AttrIx="100003" Name="alternate-key-index" ColumnName="ak_ix" SequenceNumber="3" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="short" DataLength="2" DataDecimals="0"/>
+      </Attributes>
+    </Entity>
+    <Entity EntId="10010005" Name="BASE-ATTRIBUTE" TableName="BASE_ATTR" Dependency="1" Depth="2" IsLoggable="false" Module="META">
+      <Attributes>
+        <Attribute AttrIx="100001" Name="entity-id" ColumnName="ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100002" Name="attribute-index" ColumnName="attr_ix" SequenceNumber="2" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="6" DataDecimals="0"/>
+        <Attribute AttrIx="100003" Name="base-attribute-definition-text" ColumnName="def_txt" SequenceNumber="3" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="string" DataLength="999" DataDecimals="0"/>
+        <Attribute AttrIx="100006" Name="base-attribute-data-type-code" ColumnName="data_type_code" SequenceNumber="4" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="BaseAttributeDataTypeEnum" DataLength="7" DataDecimals="0"/>
+        <Attribute AttrIx="100007" Name="base-attribute-data-length-count" ColumnName="data_len_cnt" SequenceNumber="5" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="short" DataLength="4" DataDecimals="0"/>
+        <Attribute AttrIx="100008" Name="base-attribute-data-decimals-count" ColumnName="data_dec_cnt" SequenceNumber="6" IsPrimaryKey="False"
+                     IsMandatory="False" IsForeignKey="False" NetDataType="short?" DataLength="2" DataDecimals="0"/>
+        <Attribute AttrIx="100005" Name="domain-id" ColumnName="dom_id" SequenceNumber="7" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="9" DataDecimals="0"/>
+      </Attributes>
+    </Entity>
+    <Entity EntId="10010006" Name="CARDINALITY-RELATIONSHIP" TableName="CARD_REL" Dependency="1" Depth="2" IsLoggable="false" Module="META">
+      <Attributes>
+        <Attribute AttrIx="100001" Name="parent-entity-id" ColumnName="pa_ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100002" Name="child-entity-id" ColumnName="ch_ent_id" SequenceNumber="2" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100003" Name="relationship-index" ColumnName="rel_ix" SequenceNumber="3" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="short" DataLength="2" DataDecimals="0"/>
+        <Attribute AttrIx="100004" Name="cardinality-relationship-verb-name-text" ColumnName="verb_name_txt" SequenceNumber="4" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="string" DataLength="60" DataDecimals="0"/>
+        <Attribute AttrIx="100005" Name="cardinality-relationship-inverse-verb-name-text" ColumnName="inv_verb_name_txt" SequenceNumber="5" IsPrimaryKey="False"
+                     IsMandatory="False" IsForeignKey="False" NetDataType="string" DataLength="60" DataDecimals="0"/>
+        <Attribute AttrIx="100006" Name="cardinality-relationship-identifying-indicator-code" ColumnName="ident_ind_code" SequenceNumber="6" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="CardinalityRelationshipIdentifyingIndicatorEnum" DataLength="2" DataDecimals="0"/>
+        <Attribute AttrIx="100007" Name="cardinality-relationship-parent-cardinality-code" ColumnName="pa_card_code" SequenceNumber="7" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="CardinalityRelationshipParentCardinalityEnum" DataLength="2" DataDecimals="0"/>
+        <Attribute AttrIx="100008" Name="cardinality-relationship-child-cardinality-code" ColumnName="ch_card_code" SequenceNumber="8" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="CardinalityRelationshipChildCardinalityEnum" DataLength="2" DataDecimals="0"/>
+        <Attribute AttrIx="100009" Name="cardinality-relationship-child-minimum-cardinality-count" ColumnName="ch_mnm_card_cnt" SequenceNumber="9" IsPrimaryKey="False"
+                     IsMandatory="False" IsForeignKey="False" NetDataType="short?" DataLength="3" DataDecimals="0"/>
+        <Attribute AttrIx="100010" Name="cardinality-relationship-child-maximum-cardinality-count" ColumnName="ch_max_card_cnt" SequenceNumber="10" IsPrimaryKey="False"
+                     IsMandatory="False" IsForeignKey="False" NetDataType="short?" DataLength="3" DataDecimals="0"/>
+      </Attributes>
+    </Entity>
+    <Entity EntId="10010007" Name="CATEGORY-RELATIONSHIP" TableName="CAT" Dependency="1" Depth="2" IsLoggable="false" Module="META">
+      <Attributes>
+        <Attribute AttrIx="100001" Name="super-entity-id" ColumnName="sup_ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100100" Name="super-entity-id" ColumnName="sup_ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100002" Name="category-relationship-index" ColumnName="cat_ix" SequenceNumber="2" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="short" DataLength="2" DataDecimals="0"/>
+        <Attribute AttrIx="100003" Name="category-relationship-definition-text" ColumnName="def_txt" SequenceNumber="3" IsPrimaryKey="False"
+                     IsMandatory="False" IsForeignKey="False" NetDataType="string" DataLength="255" DataDecimals="0"/>
+        <Attribute AttrIx="100004" Name="discriminator-attribute-index" ColumnName="discr_ix" SequenceNumber="4" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="6" DataDecimals="0"/>
+        <Attribute AttrIx="100005" Name="category-relationship-completeness-indicator-code" ColumnName="compl_ind_code" SequenceNumber="5" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="CategoryRelationshipCompletenessIndicatorEnum" DataLength="2" DataDecimals="0"/>
+      </Attributes>
+    </Entity>
+    <Entity EntId="10010027" Name="NON-KEY-ATTRIBUTE" TableName="NK_ATTR" Dependency="1" Depth="2" IsLoggable="false" Module="META">
+      <Attributes>
+        <Attribute AttrIx="100001" Name="entity-id" ColumnName="ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100002" Name="attribute-index" ColumnName="attr_ix" SequenceNumber="2" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="6" DataDecimals="0"/>
+        <Attribute AttrIx="100003" Name="non-key-attribute-optionality-indicator-code" ColumnName="opt_ind_code" SequenceNumber="3" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="NonKeyAttributeOptionalityIndicatorEnum" DataLength="2" DataDecimals="0"/>
+      </Attributes>
+    </Entity>
+    <Entity EntId="10010030" Name="PRIMARY-KEY-ATTRIBUTE" TableName="PK_ATTR" Dependency="1" Depth="2" IsLoggable="false" Module="META">
+      <Attributes>
+        <Attribute AttrIx="100001" Name="entity-id" ColumnName="ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100002" Name="attribute-index" ColumnName="attr_ix" SequenceNumber="2" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="6" DataDecimals="0"/>
+      </Attributes>
+    </Entity>
+    <Entity EntId="10010056" Name="CREATOR-UPDATE-IDENTIFICATION" TableName="CREATOR_UPDATE_IDENTIFIC" Dependency="1" Depth="2" IsLoggable="false" Module="META">
+      <Attributes>
+        <Attribute AttrIx="100101" Name="entity-id" ColumnName="ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100100" Name="entity-id" ColumnName="ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100001" Name="entity-id" ColumnName="ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100002" Name="creator-attribute-index" ColumnName="creator_attr_ix" SequenceNumber="2" IsPrimaryKey="False"
+                     IsMandatory="False" IsForeignKey="True" NetDataType="int?" DataLength="6" DataDecimals="0"/>
+        <Attribute AttrIx="100003" Name="update-attribute-index" ColumnName="update_attr_ix" SequenceNumber="3" IsPrimaryKey="False"
+                     IsMandatory="False" IsForeignKey="True" NetDataType="int?" DataLength="6" DataDecimals="0"/>
+      </Attributes>
+    </Entity>
+    <Entity EntId="10010060" Name="BUSINESS-RULE-ENTITY-ATTRIBUTE-COMPOSITE" TableName="BR_ENT_ATTR_COMP" Dependency="1" Depth="2" IsLoggable="false" Module="META">
+      <Attributes>
+        <Attribute AttrIx="100001" Name="business-rule-id" ColumnName="br_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="long" DataLength="12" DataDecimals="0"/>
+        <Attribute AttrIx="100002" Name="business-rule-entity-index" ColumnName="br_ent_ix" SequenceNumber="2" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="long" DataLength="12" DataDecimals="0"/>
+        <Attribute AttrIx="100003" Name="business-rule-entity-attribute-composite-index" ColumnName="br_ent_attr_comp_ix" SequenceNumber="3" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="long" DataLength="12" DataDecimals="0"/>
+        <Attribute AttrIx="100004" Name="business-rule-entity-attribute-composite-null-indicator-code" ColumnName="null_ind_code" SequenceNumber="4" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="BusinessRuleEntityAttributeCompositeNullIndicatorEnum" DataLength="6" DataDecimals="0"/>
+        <Attribute AttrIx="100005" Name="entity-id" ColumnName="ent_id" SequenceNumber="5" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100006" Name="attribute-index" ColumnName="attr_ix" SequenceNumber="6" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="6" DataDecimals="0"/>
+      </Attributes>
+    </Entity>
+    <Entity EntId="10010018" Name="FOREIGN-KEY-ATTRIBUTE" TableName="FK_ATTR" Dependency="1" Depth="3" IsLoggable="false" Module="META">
+      <Attributes>
+        <Attribute AttrIx="100100" Name="host-entity-id" ColumnName="host_ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100001" Name="host-entity-id" ColumnName="host_ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100101" Name="host-entity-id" ColumnName="host_ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100002" Name="attribute-index" ColumnName="attr_ix" SequenceNumber="2" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="6" DataDecimals="0"/>
+        <Attribute AttrIx="100003" Name="foreign-key-attribute-role-definition-text" ColumnName="role_def_txt" SequenceNumber="3" IsPrimaryKey="False"
+                     IsMandatory="False" IsForeignKey="False" NetDataType="string" DataLength="999" DataDecimals="0"/>
+        <Attribute AttrIx="100004" Name="foreign-key-attribute-rolename-indicator-code" ColumnName="rona_ind_code" SequenceNumber="4" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="ForeignKeyAttributeRolenameIndicatorEnum" DataLength="2" DataDecimals="0"/>
+        <Attribute AttrIx="100105" Name="source-entity-id" ColumnName="src_ent_id" SequenceNumber="5" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100005" Name="source-entity-id" ColumnName="src_ent_id" SequenceNumber="5" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100006" Name="source-attribute-index" ColumnName="src_attr_ix" SequenceNumber="6" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="6" DataDecimals="0"/>
+        <Attribute AttrIx="100007" Name="migrating-relationship-index" ColumnName="migr_rel_ix" SequenceNumber="7" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="short" DataLength="2" DataDecimals="0"/>
+        <Attribute AttrIx="100008" Name="base-entity-id" ColumnName="base_ent_id" SequenceNumber="8" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100009" Name="base-attribute-index" ColumnName="base_attr_ix" SequenceNumber="9" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="6" DataDecimals="0"/>
+        <Attribute AttrIx="100010" Name="unifying-attribute-index" ColumnName="unif_attr_ix" SequenceNumber="10" IsPrimaryKey="False"
+                     IsMandatory="False" IsForeignKey="True" NetDataType="int?" DataLength="6" DataDecimals="0"/>
+      </Attributes>
+    </Entity>
+    <Entity EntId="10010043" Name="SUBTYPE-RELATIONSHIP" TableName="SUBT_REL" Dependency="1" Depth="3" IsLoggable="false" Module="META">
+      <Attributes>
+        <Attribute AttrIx="100100" Name="super-entity-id" ColumnName="sup_ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100001" Name="super-entity-id" ColumnName="sup_ent_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100002" Name="sub-entity-id" ColumnName="sub_ent_id" SequenceNumber="2" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="8" DataDecimals="0"/>
+        <Attribute AttrIx="100003" Name="relationship-index" ColumnName="rel_ix" SequenceNumber="3" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="short" DataLength="2" DataDecimals="0"/>
+        <Attribute AttrIx="100004" Name="category-relationship-index" ColumnName="cat_ix" SequenceNumber="4" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="short" DataLength="2" DataDecimals="0"/>
+        <Attribute AttrIx="100005" Name="domain-id" ColumnName="dom_id" SequenceNumber="5" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="9" DataDecimals="0"/>
+        <Attribute AttrIx="100006" Name="domain-value-index" ColumnName="dom_val_ix" SequenceNumber="6" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="long" DataLength="12" DataDecimals="0"/>
+      </Attributes>
+    </Entity>
+    <Entity EntId="10010061" Name="BUSINESS-RULE-ENTITY-ATTRIBUTE-COMPOSITE-DOMAIN-VALUE" TableName="BR_ENT_ATTR_COMP_DOM_VAL" Dependency="1" Depth="3" IsLoggable="false" Module="META">
+      <Attributes>
+        <Attribute AttrIx="100001" Name="business-rule-id" ColumnName="br_id" SequenceNumber="1" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="long" DataLength="12" DataDecimals="0"/>
+        <Attribute AttrIx="100002" Name="business-rule-entity-index" ColumnName="br_ent_ix" SequenceNumber="2" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="long" DataLength="12" DataDecimals="0"/>
+        <Attribute AttrIx="100003" Name="business-rule-entity-attribute-composite-index" ColumnName="br_ent_attr_comp_ix" SequenceNumber="3" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="long" DataLength="12" DataDecimals="0"/>
+        <Attribute AttrIx="100004" Name="business-rule-entity-attribute-composite-domain-value-index" ColumnName="br_ent_attr_comp_dom_val_ix" SequenceNumber="4" IsPrimaryKey="True"
+                     IsMandatory="True" IsForeignKey="False" NetDataType="long" DataLength="12" DataDecimals="0"/>
+        <Attribute AttrIx="100005" Name="domain-id" ColumnName="dom_id" SequenceNumber="5" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="int" DataLength="9" DataDecimals="0"/>
+        <Attribute AttrIx="100006" Name="domain-value-index" ColumnName="dom_val_ix" SequenceNumber="6" IsPrimaryKey="False"
+                     IsMandatory="True" IsForeignKey="True" NetDataType="long" DataLength="12" DataDecimals="0"/>
+      </Attributes>
+    </Entity>
+  </Entities>
+</Definitions>

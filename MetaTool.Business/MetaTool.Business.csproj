@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68EEF1A8-8B70-48A4-AF9B-5D0A4351E7FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MetaTool.Business</RootNamespace>
+    <AssemblyName>MetaTool.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\AlternateKeyAttribute.cs" />
+    <Compile Include="Entities\AlternateKey.cs" />
+    <Compile Include="Entities\Attribute.cs" />
+    <Compile Include="Entities\BaseAttribute.cs" />
+    <Compile Include="Entities\BusinessRule.cs" />
+    <Compile Include="Entities\BusinessRuleEntity.cs" />
+    <Compile Include="Entities\BusinessRuleEntityAttributeComposite.cs" />
+    <Compile Include="Entities\BusinessRuleEntityAttributeCompositeDomainValue.cs" />
+    <Compile Include="Entities\CardinalityRelationship.cs" />
+    <Compile Include="Entities\CardinalityTypeEnum.cs" />
+    <Compile Include="Entities\CategoryRelationship.cs" />
+    <Compile Include="Entities\CreatorUpdateIdentification.cs" />
+    <Compile Include="Entities\Domain.cs" />
+    <Compile Include="Entities\DomainValue.cs" />
+    <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Entities\ForeignKeyAttribute.cs" />
+    <Compile Include="Entities\NonKeyAttribute.cs" />
+    <Compile Include="Entities\PrimaryKeyAttribute.cs" />
+    <Compile Include="Entities\Relationship.cs" />
+    <Compile Include="Entities\SubtypeRelationship.cs" />
+    <Compile Include="Entities\ValidCombination.cs" />
+    <Compile Include="Expressions\AlternateKeyAttributeExpression.cs" />
+    <Compile Include="Expressions\AlternateKeyExpression.cs" />
+    <Compile Include="Expressions\AttributeExpression.cs" />
+    <Compile Include="Expressions\BaseAttributeExpression.cs" />
+    <Compile Include="Expressions\BusinessRuleEntityAttributeCompositeDomainValueExpression.cs" />
+    <Compile Include="Expressions\BusinessRuleEntityAttributeCompositeExpression.cs" />
+    <Compile Include="Expressions\BusinessRuleEntityExpression.cs" />
+    <Compile Include="Expressions\BusinessRuleExpression.cs" />
+    <Compile Include="Expressions\CardinalityRelationshipExpression.cs" />
+    <Compile Include="Expressions\CategoryRelationshipExpression.cs" />
+    <Compile Include="Expressions\CreatorUpdateIdentificationExpression.cs" />
+    <Compile Include="Expressions\DomainExpression.cs" />
+    <Compile Include="Expressions\DomainValueExpression.cs" />
+    <Compile Include="Expressions\EntityExpression.cs" />
+    <Compile Include="Expressions\ForeignKeyAttributeExpression.cs" />
+    <Compile Include="Expressions\NonKeyAttributeExpression.cs" />
+    <Compile Include="Expressions\PrimaryKeyAttributeExpression.cs" />
+    <Compile Include="Expressions\RelationshipExpression.cs" />
+    <Compile Include="Expressions\SubtypeRelationshipExpression.cs" />
+    <Compile Include="Interfaces\IAlternateKeyAttribute.cs" />
+    <Compile Include="Interfaces\IAlternateKey.cs" />
+    <Compile Include="Interfaces\IAttribute.cs" />
+    <Compile Include="Interfaces\IBaseAttribute.cs" />
+    <Compile Include="Interfaces\IBusinessRule.cs" />
+    <Compile Include="Interfaces\IBusinessRuleEntity.cs" />
+    <Compile Include="Interfaces\IBusinessRuleEntityAttributeComposite.cs" />
+    <Compile Include="Interfaces\IBusinessRuleEntityAttributeCompositeDomainValue.cs" />
+    <Compile Include="Interfaces\ICardinalityRelationship.cs" />
+    <Compile Include="Interfaces\ICategoryRelationship.cs" />
+    <Compile Include="Interfaces\ICreatorUpdateIdentification.cs" />
+    <Compile Include="Interfaces\IDomain.cs" />
+    <Compile Include="Interfaces\IDomainValue.cs" />
+    <Compile Include="Interfaces\IEntity.cs" />
+    <Compile Include="Interfaces\IForeignKeyAttribute.cs" />
+    <Compile Include="Interfaces\INonKeyAttribute.cs" />
+    <Compile Include="Interfaces\IPrimaryKeyAttribute.cs" />
+    <Compile Include="Interfaces\IRelationship.cs" />
+    <Compile Include="Interfaces\ISubtypeRelationship.cs" />
+    <Compile Include="ModelLoader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Definitions\Definitions.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\C4Net.Framework.Core\C4Net.Framework.Core.csproj">
+      <Project>{4b98f866-f6a4-4c7a-a163-8b94ed2b5973}</Project>
+      <Name>C4Net.Framework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\C4Net.Framework.Data\C4Net.Framework.Data.csproj">
+      <Project>{8cc040f2-732e-4fdc-a85b-897546fd59b1}</Project>
+      <Name>C4Net.Framework.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\C4Net.Framework.Expressions\C4Net.Framework.Expressions.csproj">
+      <Project>{8b510605-efa6-4ae7-bb8c-e57b5a494671}</Project>
+      <Name>C4Net.Framework.Expressions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\C4Net.Framework.Templates\C4Net.Framework.Templates.csproj">
+      <Project>{58ad833d-bce9-4625-80cd-5cc1076a64b3}</Project>
+      <Name>C4Net.Framework.Templates</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

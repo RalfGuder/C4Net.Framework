@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="yes"?>
+<Definition>
+  <Table Name="[%Name%]" TableName="[%PhysicalName%]">
+  [%foreach(Attributes)%]  <Column Name="[%Name%]" ColumnName="[%PhysicalName%]" DataType="[%BaseNetType%]"[%if(IsPrimaryKey)%] PrimaryKey="true"[%end%][%if(IsMandatory)%] AllowNulls="false"[%end%] />
+  [%end%]</Table>
+</Definition>

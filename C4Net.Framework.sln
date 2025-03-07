@@ -1,0 +1,211 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C4Net.Framework.Core", "C4Net.Framework.Core\C4Net.Framework.Core.csproj", "{4B98F866-F6A4-4C7A-A163-8B94ED2B5973}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - Presentation", "{6975E700-FEB2-49E2-9522-95E5DDD64075}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Service", "02 - Service", "{AB6B605E-95F4-430B-8FBB-1D9EF39EF791}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Business", "03 - Business", "{4E91A7F4-4AC9-420A-AACA-A57C385ECCFE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Model", "04 - Model", "{AEBB8005-2C4A-4571-A760-09D4EAAF5917}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Core", "05 - Core", "{D9B7975E-FAC2-4E09-88DA-2112FBFA3419}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20 - COTs", "20 - COTs", "{7D8C2092-483C-4883-A058-9CEAD90DAEE4}"
+	ProjectSection(SolutionItems) = preProject
+		COTS\Caliburn.Micro.dll = COTS\Caliburn.Micro.dll
+		COTS\log4net.dll = COTS\log4net.dll
+		COTS\MahApps.Metro.dll = COTS\MahApps.Metro.dll
+		COTS\MahApps.Metro.Resources.dll = COTS\MahApps.Metro.Resources.dll
+		COTS\NLog.dll = COTS\NLog.dll
+		COTS\System.Windows.Interactivity.dll = COTS\System.Windows.Interactivity.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "21 - Resources", "21 - Resources", "{EB6B34FD-1125-42B7-BE6E-907AB9959B48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30 - Tests", "30 - Tests", "{5B2E5DD9-14C8-4086-A641-4C3CC0A0A6CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "40 - Tools", "40 - Tools", "{576CE25D-E7E5-4EA6-AABE-809F5BAC1173}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Loggers", "01 - Loggers", "{A6646D12-2110-42F0-B73D-4B99981BB9F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Scripter", "02 - Scripter", "{662D1079-2257-4E81-A81B-7E3765C964B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Expressions", "03 - Expressions", "{FA12B23E-B716-4301-986A-11CC1BA02A32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Templates", "04 - Templates", "{7FC12902-2A6D-4845-9722-B37944441EB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C4Net.Framework.Log4net", "C4Net.Framework.Log4net\C4Net.Framework.Log4net.csproj", "{5778F276-8E8F-4575-BB6C-C3C13B0756D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C4Net.Framework.NLoggable", "C4Net.Framework.NLoggable\C4Net.Framework.NLoggable.csproj", "{2C7D8CB1-82A9-4B89-B265-C1D73F2A3EA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C4Net.Framework.Scriptter", "C4Net.Framework.Scriptter\C4Net.Framework.Scriptter.csproj", "{90E4AE9A-5C52-4697-B0AE-1CA59C6776F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C4Net.Framework.Expressions", "C4Net.Framework.Expressions\C4Net.Framework.Expressions.csproj", "{8B510605-EFA6-4AE7-BB8C-E57B5A494671}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C4Net.Framework.Templates", "C4Net.Framework.Templates\C4Net.Framework.Templates.csproj", "{58AD833D-BCE9-4625-80CD-5CC1076A64B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C4Net.Framework.Data", "C4Net.Framework.Data\C4Net.Framework.Data.csproj", "{8CC040F2-732E-4FDC-A85B-897546FD59B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "50 - Beds", "50 - Beds", "{0DE79324-3A1F-465E-BE10-A078BEAC15CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBed", "TestBed\TestBed.csproj", "{E4F24C8C-8B2A-4FC5-85BA-AF66570F461E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C4Net.Framework.MVVM", "C4Net.Framework.MVVM\C4Net.Framework.MVVM.csproj", "{7FAB866A-6C32-4FA4-89EB-CA09893946DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - MetaTool", "01 - MetaTool", "{EE98F939-FD0B-4582-AC66-756BA9D3676F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaTool", "MetaTool\MetaTool.csproj", "{1276340D-C824-42D0-BDED-B55B899D7ACA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaTool.Business", "MetaTool.Business\MetaTool.Business.csproj", "{68EEF1A8-8B70-48A4-AF9B-5D0A4351E7FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C4Net.Framework.Business", "C4Net.Framework.Business\C4Net.Framework.Business.csproj", "{3D21F46C-1D70-4B20-90AF-FBF63260D27E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C4Net.Framework.Service", "C4Net.Framework.Service\C4Net.Framework.Service.csproj", "{432B8076-8557-48EA-A7D5-175A311E5C28}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 14
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs23
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = C4Net.Framework.Core\\C4Net.Framework.Core.csproj
+		SccProjectTopLevelParentUniqueName1 = C4Net.Framework.sln
+		SccProjectName1 = C4Net.Framework.Core
+		SccLocalPath1 = C4Net.Framework.Core
+		SccProjectUniqueName2 = C4Net.Framework.Log4net\\C4Net.Framework.Log4net.csproj
+		SccProjectTopLevelParentUniqueName2 = C4Net.Framework.sln
+		SccProjectName2 = C4Net.Framework.Log4net
+		SccLocalPath2 = C4Net.Framework.Log4net
+		SccProjectUniqueName3 = C4Net.Framework.NLoggable\\C4Net.Framework.NLoggable.csproj
+		SccProjectTopLevelParentUniqueName3 = C4Net.Framework.sln
+		SccProjectName3 = C4Net.Framework.NLoggable
+		SccLocalPath3 = C4Net.Framework.NLoggable
+		SccProjectUniqueName4 = C4Net.Framework.Scriptter\\C4Net.Framework.Scriptter.csproj
+		SccProjectTopLevelParentUniqueName4 = C4Net.Framework.sln
+		SccProjectName4 = C4Net.Framework.Scriptter
+		SccLocalPath4 = C4Net.Framework.Scriptter
+		SccProjectUniqueName5 = C4Net.Framework.Expressions\\C4Net.Framework.Expressions.csproj
+		SccProjectTopLevelParentUniqueName5 = C4Net.Framework.sln
+		SccProjectName5 = C4Net.Framework.Expressions
+		SccLocalPath5 = C4Net.Framework.Expressions
+		SccProjectUniqueName6 = C4Net.Framework.Templates\\C4Net.Framework.Templates.csproj
+		SccProjectTopLevelParentUniqueName6 = C4Net.Framework.sln
+		SccProjectName6 = C4Net.Framework.Templates
+		SccLocalPath6 = C4Net.Framework.Templates
+		SccProjectUniqueName7 = C4Net.Framework.Data\\C4Net.Framework.Data.csproj
+		SccProjectTopLevelParentUniqueName7 = C4Net.Framework.sln
+		SccProjectName7 = C4Net.Framework.Data
+		SccLocalPath7 = C4Net.Framework.Data
+		SccProjectUniqueName8 = TestBed\\TestBed.csproj
+		SccProjectTopLevelParentUniqueName8 = C4Net.Framework.sln
+		SccProjectName8 = TestBed
+		SccLocalPath8 = TestBed
+		SccProjectUniqueName9 = C4Net.Framework.MVVM\\C4Net.Framework.MVVM.csproj
+		SccProjectTopLevelParentUniqueName9 = C4Net.Framework.sln
+		SccProjectName9 = C4Net.Framework.MVVM
+		SccLocalPath9 = C4Net.Framework.MVVM
+		SccProjectUniqueName10 = MetaTool\\MetaTool.csproj
+		SccProjectTopLevelParentUniqueName10 = C4Net.Framework.sln
+		SccProjectName10 = MetaTool
+		SccLocalPath10 = MetaTool
+		SccProjectUniqueName11 = MetaTool.Business\\MetaTool.Business.csproj
+		SccProjectTopLevelParentUniqueName11 = C4Net.Framework.sln
+		SccProjectName11 = MetaTool.Business
+		SccLocalPath11 = MetaTool.Business
+		SccProjectUniqueName12 = C4Net.Framework.Business\\C4Net.Framework.Business.csproj
+		SccProjectTopLevelParentUniqueName12 = C4Net.Framework.sln
+		SccProjectName12 = C4Net.Framework.Business
+		SccLocalPath12 = C4Net.Framework.Business
+		SccProjectUniqueName13 = C4Net.Framework.Service\\C4Net.Framework.Service.csproj
+		SccProjectTopLevelParentUniqueName13 = C4Net.Framework.sln
+		SccProjectName13 = C4Net.Framework.Service
+		SccLocalPath13 = C4Net.Framework.Service
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B98F866-F6A4-4C7A-A163-8B94ED2B5973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B98F866-F6A4-4C7A-A163-8B94ED2B5973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B98F866-F6A4-4C7A-A163-8B94ED2B5973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B98F866-F6A4-4C7A-A163-8B94ED2B5973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5778F276-8E8F-4575-BB6C-C3C13B0756D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5778F276-8E8F-4575-BB6C-C3C13B0756D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5778F276-8E8F-4575-BB6C-C3C13B0756D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5778F276-8E8F-4575-BB6C-C3C13B0756D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C7D8CB1-82A9-4B89-B265-C1D73F2A3EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C7D8CB1-82A9-4B89-B265-C1D73F2A3EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C7D8CB1-82A9-4B89-B265-C1D73F2A3EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C7D8CB1-82A9-4B89-B265-C1D73F2A3EA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90E4AE9A-5C52-4697-B0AE-1CA59C6776F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90E4AE9A-5C52-4697-B0AE-1CA59C6776F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90E4AE9A-5C52-4697-B0AE-1CA59C6776F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90E4AE9A-5C52-4697-B0AE-1CA59C6776F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B510605-EFA6-4AE7-BB8C-E57B5A494671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B510605-EFA6-4AE7-BB8C-E57B5A494671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B510605-EFA6-4AE7-BB8C-E57B5A494671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B510605-EFA6-4AE7-BB8C-E57B5A494671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58AD833D-BCE9-4625-80CD-5CC1076A64B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58AD833D-BCE9-4625-80CD-5CC1076A64B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58AD833D-BCE9-4625-80CD-5CC1076A64B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58AD833D-BCE9-4625-80CD-5CC1076A64B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CC040F2-732E-4FDC-A85B-897546FD59B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CC040F2-732E-4FDC-A85B-897546FD59B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CC040F2-732E-4FDC-A85B-897546FD59B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CC040F2-732E-4FDC-A85B-897546FD59B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4F24C8C-8B2A-4FC5-85BA-AF66570F461E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4F24C8C-8B2A-4FC5-85BA-AF66570F461E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4F24C8C-8B2A-4FC5-85BA-AF66570F461E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4F24C8C-8B2A-4FC5-85BA-AF66570F461E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FAB866A-6C32-4FA4-89EB-CA09893946DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FAB866A-6C32-4FA4-89EB-CA09893946DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FAB866A-6C32-4FA4-89EB-CA09893946DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FAB866A-6C32-4FA4-89EB-CA09893946DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1276340D-C824-42D0-BDED-B55B899D7ACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1276340D-C824-42D0-BDED-B55B899D7ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1276340D-C824-42D0-BDED-B55B899D7ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1276340D-C824-42D0-BDED-B55B899D7ACA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68EEF1A8-8B70-48A4-AF9B-5D0A4351E7FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68EEF1A8-8B70-48A4-AF9B-5D0A4351E7FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68EEF1A8-8B70-48A4-AF9B-5D0A4351E7FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68EEF1A8-8B70-48A4-AF9B-5D0A4351E7FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D21F46C-1D70-4B20-90AF-FBF63260D27E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D21F46C-1D70-4B20-90AF-FBF63260D27E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D21F46C-1D70-4B20-90AF-FBF63260D27E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D21F46C-1D70-4B20-90AF-FBF63260D27E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{432B8076-8557-48EA-A7D5-175A311E5C28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{432B8076-8557-48EA-A7D5-175A311E5C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{432B8076-8557-48EA-A7D5-175A311E5C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{432B8076-8557-48EA-A7D5-175A311E5C28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4B98F866-F6A4-4C7A-A163-8B94ED2B5973} = {D9B7975E-FAC2-4E09-88DA-2112FBFA3419}
+		{A6646D12-2110-42F0-B73D-4B99981BB9F4} = {D9B7975E-FAC2-4E09-88DA-2112FBFA3419}
+		{662D1079-2257-4E81-A81B-7E3765C964B1} = {D9B7975E-FAC2-4E09-88DA-2112FBFA3419}
+		{FA12B23E-B716-4301-986A-11CC1BA02A32} = {D9B7975E-FAC2-4E09-88DA-2112FBFA3419}
+		{7FC12902-2A6D-4845-9722-B37944441EB3} = {D9B7975E-FAC2-4E09-88DA-2112FBFA3419}
+		{7FAB866A-6C32-4FA4-89EB-CA09893946DD} = {6975E700-FEB2-49E2-9522-95E5DDD64075}
+		{432B8076-8557-48EA-A7D5-175A311E5C28} = {AB6B605E-95F4-430B-8FBB-1D9EF39EF791}
+		{3D21F46C-1D70-4B20-90AF-FBF63260D27E} = {4E91A7F4-4AC9-420A-AACA-A57C385ECCFE}
+		{8CC040F2-732E-4FDC-A85B-897546FD59B1} = {AEBB8005-2C4A-4571-A760-09D4EAAF5917}
+		{EE98F939-FD0B-4582-AC66-756BA9D3676F} = {576CE25D-E7E5-4EA6-AABE-809F5BAC1173}
+		{5778F276-8E8F-4575-BB6C-C3C13B0756D8} = {A6646D12-2110-42F0-B73D-4B99981BB9F4}
+		{2C7D8CB1-82A9-4B89-B265-C1D73F2A3EA8} = {A6646D12-2110-42F0-B73D-4B99981BB9F4}
+		{90E4AE9A-5C52-4697-B0AE-1CA59C6776F3} = {662D1079-2257-4E81-A81B-7E3765C964B1}
+		{8B510605-EFA6-4AE7-BB8C-E57B5A494671} = {FA12B23E-B716-4301-986A-11CC1BA02A32}
+		{58AD833D-BCE9-4625-80CD-5CC1076A64B3} = {7FC12902-2A6D-4845-9722-B37944441EB3}
+		{E4F24C8C-8B2A-4FC5-85BA-AF66570F461E} = {0DE79324-3A1F-465E-BE10-A078BEAC15CA}
+		{1276340D-C824-42D0-BDED-B55B899D7ACA} = {EE98F939-FD0B-4582-AC66-756BA9D3676F}
+		{68EEF1A8-8B70-48A4-AF9B-5D0A4351E7FC} = {EE98F939-FD0B-4582-AC66-756BA9D3676F}
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

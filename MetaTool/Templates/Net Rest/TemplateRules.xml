@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<template>
+	<rules>
+		<rule iterator = "Enumerateds">
+			<iteration fileName = "Enum.cs_" outputFileName= "[%OutputPath%]\Enums\[%Name%].cs" />
+		</rule>
+		<rule iterator = "Entities">
+			<iteration fileName = "Interface.cs_" outputFileName= "[%OutputPath%]\Interfaces\I[%Name%].cs" />
+			<iteration fileName = "Expression.cs_" outputFileName= "[%OutputPath%]\Expressions\[%Name%]Expression.cs" />
+			<iteration fileName = "Entity.cs_" outputFileName= "[%OutputPath%]\Entities\[%Name%].auto.cs" />
+		</rule>
+    <rule iterator = "PlainEntities">
+      <iteration fileName = "Dto.cs_" outputFileName= "[%OutputPath%]\Transport\[%Name%]DTO.auto.cs" />
+      <iteration fileName = "ServiceInterface.cs_" outputFileName="[%OutputPath%]\ServiceInterface\I[%Name%]Service.auto.cs" />
+    </rule>
+		<rule iterator = "">
+			<iteration fileName = "SQLServerDDL.sq_" outputFileName= "[%OutputPath%]\SQLServerDDL\SQLServerDDL.sql" />
+			<iteration fileName = "Definitions.xm_" outputFileName= "[%OutputPath%]\Definitions\Definitions.xml" />
+		</rule>
+	</rules>
+</template>
